@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/fooditem_imageView1"
+        android:layout_width="30dp"
+        android:layout_height="80dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/ic_launcher" />
+
+    <TextView
+        android:id="@+id/fooditem_textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/fooditem_imageView1"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/fooditem_textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/fooditem_textView1"
+        android:layout_below="@+id/fooditem_textView1"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/fooditem_textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/fooditem_imageView1"
+        android:layout_alignLeft="@+id/fooditem_textView2"
+        android:text="TextView" />
+
+    <Button
+        android:id="@+id/fooditem_button1"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_alignBottom="@+id/fooditem_textView3"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="46dp"
+        android:background="@android:color/holo_red_light"
+        android:text="购买" />
+
+</RelativeLayout>

@@ -1,0 +1,54 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.runrun.MainActivity" >
+
+    <utils.NoScrool
+        android:id="@+id/main_viewpager"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+    </utils.NoScrool>
+
+    <RadioGroup
+        android:id="@+id/radiogroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/black"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/radiobt1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/selector_home"
+            android:text="主页" 
+            android:textColor="@android:color/white"
+            android:gravity="center_horizontal"/>
+        <RadioButton
+            android:id="@+id/radiobt2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/selector_complet"
+            android:text="已完成" 
+            android:textColor="@android:color/white"
+            android:gravity="center_horizontal"/>
+        <RadioButton
+            android:id="@+id/radiobt3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/selector_unfinish"
+            android:text="未完成" 
+            android:textColor="@android:color/white"
+            android:gravity="center_horizontal"/>
+    </RadioGroup>
+
+</LinearLayout>
